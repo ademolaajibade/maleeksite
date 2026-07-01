@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Contact form setup
+
+The booking form on `/contact` sends enquiries via [Resend](https://resend.com). Copy `.env.example` to `.env.local` and fill in:
+
+- `RESEND_API_KEY` — from your Resend dashboard (free tier is enough to start)
+- `CONTACT_TO_EMAIL` — the inbox that should receive enquiries
+- `CONTACT_FROM_EMAIL` — use `onboarding@resend.dev` until your domain is verified in Resend, then switch to an address on your own domain
+
+Set the same variables in your hosting provider's dashboard (e.g. Vercel → Project Settings → Environment Variables) before going live — without `RESEND_API_KEY` the form will show an error instead of sending.
+
 ## Getting Started
 
 First, run the development server:

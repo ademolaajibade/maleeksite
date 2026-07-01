@@ -16,6 +16,8 @@ const services = [
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -25,9 +27,34 @@ export default function ContactPage() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Something went wrong. Please try again.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again or email us directly."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputClass =
@@ -228,11 +255,18 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {error && (
+                    <p className="text-red-400 text-xs border border-red-400/40 bg-red-400/10 px-4 py-3">
+                      {error}
+                    </p>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full py-4 bg-accent text-black text-xs tracking-[0.3em] uppercase font-semibold hover:bg-accent-light transition-colors duration-300"
+                    disabled={submitting}
+                    className="w-full py-4 bg-accent text-black text-xs tracking-[0.3em] uppercase font-semibold hover:bg-accent-light transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send Enquiry
+                    {submitting ? "Sending…" : "Send Enquiry"}
                   </button>
                 </form>
               )}
