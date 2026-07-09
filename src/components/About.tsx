@@ -114,7 +114,7 @@ export default function About() {
               }}
               className="inline-flex items-center gap-3 text-accent text-sm tracking-[0.2em] uppercase hover:gap-5 transition-all duration-300 group"
             >
-              Work With Me
+              Work With Me. 
               <span className="w-8 h-px bg-accent group-hover:w-12 transition-all duration-300" />
             </a>
           </div>
