@@ -1,40 +1,46 @@
+import fs from "fs";
+import path from "path";
 import Link from "next/link";
 import Image from "next/image";
 
-const portfolioTeaser = [
-  {
-    src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80",
-    alt: "Portrait session",
-    category: "Portraits",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80",
-    alt: "Fashion shoot",
-    category: "Fashion",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80",
-    alt: "Pre-wedding shoot",
-    category: "Pre-Wedding",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?auto=format&fit=crop&w=800&q=80",
-    alt: "Studio portrait",
-    category: "Portraits",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
-    alt: "Editorial shoot",
-    category: "Fashion",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
-    alt: "Wedding moment",
-    category: "Events",
-  },
+const CATEGORY_FOLDERS: { folder: string; label: string }[] = [
+  { folder: "portraits", label: "Portraits" },
+  { folder: "fashion", label: "Fashion" },
+  { folder: "pre-wedding", label: "Pre-Wedding" },
+  { folder: "events", label: "Events" },
+  { folder: "maternity", label: "Maternity" },
+  { folder: "birthday", label: "Birthday" },
+  { folder: "graduation", label: "Graduation" },
+  { folder: "children", label: "Children" },
+  { folder: "family", label: "Family" },
 ];
 
+const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
+
+function firstCategoryImage(folder: string, label: string) {
+  const dir = path.join(process.cwd(), "public", "portfolio", folder);
+  let files: string[] = [];
+  try {
+    files = fs
+      .readdirSync(dir)
+      .filter((f) => IMAGE_EXTENSIONS.has(path.extname(f).toLowerCase()))
+      .sort();
+  } catch {
+    return null;
+  }
+  if (files.length === 0) return null;
+  return {
+    src: `/portfolio/${folder}/${files[0]}`,
+    alt: `${label} sample`,
+    category: label,
+  };
+}
+
 export default function PortfolioTeaser() {
+  const portfolioTeaser = CATEGORY_FOLDERS.map(({ folder, label }) =>
+    firstCategoryImage(folder, label)
+  ).filter((img): img is NonNullable<typeof img> => img !== null);
+
   return (
     <section id="portfolio" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
