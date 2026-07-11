@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 const stats = [
-  { value: "8+", label: "Years Experience" },
+  { value: "5+", label: "Years Experience" },
   { value: "1.2K+", label: "Sessions Completed" },
-  { value: "300+", label: "Happy Clients" },
-  { value: "15+", label: "Awards Won" },
+  { value: "200+", label: "Happy Clients" },
+  { value: "5+", label: "Awards Won" },
 ];
 
 export default function About() {
@@ -58,7 +58,7 @@ export default function About() {
             {/* Years badge */}
             <div className="absolute -bottom-6 -right-4 lg:-right-8 bg-accent text-black px-6 py-4">
               <p className="font-serif text-4xl font-semibold leading-none">
-                8
+                5
               </p>
               <p className="text-xs tracking-widest uppercase font-medium mt-1">
                 Years of Art

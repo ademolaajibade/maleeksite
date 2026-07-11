@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import fs from "fs";
+import path from "path";
 import Link from "next/link";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
@@ -19,6 +21,13 @@ export const metadata: Metadata = {
     "Portrait sessions, family shoots, events, graduation, fashion, lifestyle, and pre-wedding photography by Maleek — South Wales, UK.",
 };
 
+function randomPortfolioImage(category: string): string {
+  const dir = path.join(process.cwd(), "public", "portfolio", category);
+  const files = fs.readdirSync(dir).filter((f) => /\.(jpe?g|png|webp)$/i.test(f));
+  const file = files[Math.floor(Math.random() * files.length)];
+  return `/portfolio/${category}/${file}`;
+}
+
 const services = [
   {
     icon: Camera,
@@ -36,8 +45,7 @@ const services = [
       "Birthday & graduation shoots",
       "Maternity shoots",
     ],
-    image:
-      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80",
+    image: randomPortfolioImage("portraits"),
   },
   {
     icon: Users,
@@ -54,8 +62,7 @@ const services = [
       "Multi-generational portraits",
       "Annual family portraits",
     ],
-    image:
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80",
+    image: randomPortfolioImage("family"),
   },
   {
     icon: GraduationCap,
@@ -72,8 +79,7 @@ const services = [
       "Group class photos",
       "Solo graduation portraits",
     ],
-    image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80",
+    image: randomPortfolioImage("graduation"),
   },
   {
     icon: CalendarDays,
@@ -86,8 +92,7 @@ const services = [
       "Online gallery delivery",
     ],
     perfectFor: ["Birthdays", "Corporate events", "Parties", "Engagements"],
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+    image: randomPortfolioImage("events"),
   },
   {
     icon: Heart,
@@ -100,8 +105,7 @@ const services = [
       "Optional photo book (£200)",
     ],
     perfectFor: ["Engaged couples", "Save-the-date photos", "Anniversary portraits"],
-    image:
-      "https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80",
+    image: randomPortfolioImage("pre-wedding"),
   },
   {
     icon: Sparkles,
@@ -114,8 +118,7 @@ const services = [
       "Social media crops included in campaign package",
     ],
     perfectFor: ["Clothing brands", "Fashion designers", "Product campaigns"],
-    image:
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80",
+    image: randomPortfolioImage("fashion"),
   },
   {
     icon: Sun,
@@ -128,8 +131,7 @@ const services = [
       "Up to 10 edited images",
     ],
     perfectFor: ["Content creators", "Personal brands", "Natural storytelling shoots"],
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80",
+    image: randomPortfolioImage("maternity"),
   },
   {
     icon: Baby,
@@ -142,8 +144,7 @@ const services = [
       "10 edited images",
     ],
     perfectFor: ["Toddlers & young children", "Birthday portraits", "Milestone memories"],
-    image:
-      "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80",
+    image: randomPortfolioImage("children"),
   },
 ];
 
@@ -155,7 +156,7 @@ export default function ServicesPage() {
         title="My"
         accent="Services"
         subtitle="Every session is tailored to you — your personality, your vision, your story."
-        image="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=2000&q=80"
+        image={randomPortfolioImage("birthday")}
       />
 
       <section className="py-24">
@@ -166,18 +167,18 @@ export default function ServicesPage() {
             return (
               <div
                 key={service.title}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${reverse ? "lg:flex lg:flex-row-reverse" : ""}`}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
               >
-                <div className="relative aspect-4/3 overflow-hidden">
+                <div className={`relative aspect-4/5 overflow-hidden ${reverse ? "lg:order-2" : ""}`}>
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-cover"
+                    className="object-cover object-center"
                   />
                 </div>
-                <div className={reverse ? "lg:pr-8" : "lg:pl-8"}>
+                <div className={reverse ? "lg:order-1 lg:pr-8" : "lg:pl-8"}>
                   <div className="w-12 h-12 border border-accent/30 flex items-center justify-center mb-6">
                     <Icon size={18} className="text-accent" strokeWidth={1.5} />
                   </div>
