@@ -3,6 +3,8 @@
 import { useState } from "react";
 import PageHeader from "@/components/PageHeader";
 import { Mail, MapPin, Clock } from "lucide-react";
+import Image from "next/image";
+
 
 const services = [
   "Portrait Session",
@@ -80,7 +82,16 @@ export default function ContactPage() {
                 <ul className="space-y-6">
                   <li className="flex items-start gap-4">
                     <div className="w-10 h-10 border border-accent/30 flex items-center justify-center shrink-0 mt-0.5">
-                      <MapPin size={14} className="text-accent" strokeWidth={1.5} />
+                     <Image
+                                        src='/location.png'
+                                        alt='location'
+                                        
+                                        width="28" 
+                                        height="28"
+                                        // className="object-cover object-center"
+                                        className="text-accent"
+                                      />
+                      {/* <MapPin size={14} className="text-accent" strokeWidth={1.5} /> */}
                     </div>
                     <div>
                       <p className="text-foreground text-sm font-medium mb-1">Location</p>
@@ -90,44 +101,101 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="w-10 h-10 border border-accent/30 flex items-center justify-center shrink-0 mt-0.5">
-                      <Mail size={14} className="text-accent" strokeWidth={1.5} />
+                     <Image
+                                        src='/email.png'
+                                        alt='email'
+                                        
+                                        width="28" 
+                                        height="28"
+                                        // className="object-cover object-center"
+                                        className="text-accent"
+                                      />
+                      {/* <Mail size={14} className="text-accent" strokeWidth={1.5} /> */}
                     </div>
                     <div>
                       <p className="text-foreground text-sm font-medium mb-1">Email</p>
                       <a
-                        href="mailto:hello@maleekphotography.com"
+                        href="mailto:hello@maleekshots@gmail.com"
                         className="text-muted-foreground text-sm hover:text-accent transition-colors duration-300"
                       >
-                        hello@maleekphotography.com
+                        maleekshots@gmail.com
                       </a>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="w-10 h-10 border border-accent/30 flex items-center justify-center shrink-0 mt-0.5">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                       <Image
+                                        src='/instagram.png'
+                                        alt='instagram'
+                                        
+                                        width="28" 
+                                        height="28"
+                                        // className="object-cover object-center"
+                                        className="text-accent"
+                                      />
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> */}
                     </div>
                     <div>
                       <p className="text-foreground text-sm font-medium mb-1">Instagram</p>
                       <a
-                        href="https://instagram.com/maleekshotit"
+                        href="https://instagram.com/maleekshot_it"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground text-sm hover:text-accent transition-colors duration-300"
                       >
-                        @maleekshotit
+                        @maleekshot_it
+                      </a>
+                    </div>
+                  </li> <li className="flex items-start gap-4">
+                    <div className="w-10 h-10 flex items-center justify-center shrink-0 mt-0.5">
+                    <Image
+                                        src='/tiktok.png'
+                                        alt='tiktok'
+                                        
+                                        width="28" 
+                                        height="28"
+                                        // className="object-cover object-center"
+                                        className="text-accent"
+                                      />
+                      {/* <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> */}
+                    </div>
+                    <div>
+                      <p className="text-foreground text-sm font-medium mb-1">TikTok</p>
+                      <a
+                        href="https://tiktok.com/maleekshot_it"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground text-sm hover:text-accent transition-colors duration-300"
+                      >
+                        @maleekshot_it
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-4">
+                  
+
+                   <li className="flex items-start gap-4">
                     <div className="w-10 h-10 border border-accent/30 flex items-center justify-center shrink-0 mt-0.5">
-                      <Clock size={14} className="text-accent" strokeWidth={1.5} />
+                     <Image
+                                        src='/phone.png'
+                                        alt='phone'
+                                        
+                                        width="28" 
+                                        height="28"
+                                        // className="object-cover object-center"
+                                        className="text-accent"
+                                      />
+                      {/* <Clock size={14} className="text-accent" strokeWidth={1.5} /> */}
                     </div>
-                    <div>
-                      <p className="text-foreground text-sm font-medium mb-1">Response Time</p>
-                      <p className="text-muted-foreground text-sm">Within 24 hours</p>
-                      <p className="text-muted text-xs mt-1">Mon – Sat, 9am – 7pm</p>
+                    <div >
+                      <p className="text-foreground text-sm font-medium mb-1">Phone Number</p>
+                     <p>07402059301</p>
                     </div>
                   </li>
+
+
+
+
+               
                 </ul>
               </div>
 
@@ -135,10 +203,11 @@ export default function ContactPage() {
                 <p className="text-accent text-xs tracking-[0.4em] uppercase mb-4">Before You Book</p>
                 <ul className="space-y-3">
                   {[
-                    "A 30% deposit secures your date",
-                    "Full payment due 48 hrs before session",
-                    "Free reschedule with 72 hrs notice",
-                    "Gallery delivered within 2–3 weeks",
+                    "A 40% non-refundable deposit is required to secure your booking.",
+                    "Remaining balance must be paid before or on shoot day.",
+                    "RAW/Unedited images are not delivered.",
+                    "Travel fees may apply outside Cardiff/South Wales.",
+                    "Delivery timeframe: 2-5 working days.",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
                       <span className="w-4 h-px bg-accent mt-2 shrink-0" />

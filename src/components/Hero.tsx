@@ -29,7 +29,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=2000&q=85"
+          src="/portfolio/pre-wedding/IMG_1594.jpg"
           alt="Portrait photography hero"
           fill
           priority

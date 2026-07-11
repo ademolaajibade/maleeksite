@@ -13,23 +13,35 @@ const navLinks = [
 const socials = [
   {
     label: "Instagram",
-    href: "https://instagram.com/maleekshotit",
+    href: "https://instagram.com/maleekshot_it",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+       <Image
+                                              src='/instagram.png'
+                                              alt='instagram'
+                                              
+                                              width="28" 
+                                              height="28"
+                                              // className="object-cover object-center"
+                                              className="text-accent"
+                                            />
+      // <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
     ),
   },
-  {
-    label: "Facebook",
-    href: "https://facebook.com/maleekshotit",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-    ),
-  },
+
   {
     label: "TikTok",
-    href: "https://tiktok.com/@maleekshotit",
+    href: "https://tiktok.com/@maleekshot_it",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+       <Image
+                                              src='/tiktok.png'
+                                              alt='tiktok'
+                                              
+                                              width="28" 
+                                              height="28"
+                                              // className="object-cover object-center"
+                                              className="text-accent"
+                                            />
+      // <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
     ),
   },
 ];
@@ -98,12 +110,13 @@ export default function Footer() {
             <p className="text-accent text-xs tracking-[0.4em] uppercase mb-6">Get in Touch</p>
             <ul className="space-y-3 text-sm text-muted-foreground mb-8">
               <li>Southwales, United Kingdom</li>
+              <li>07402059301</li>
               <li>
                 <a
-                  href="mailto:hello@maleekphotography.com"
+                  href="mailto:maleekshots@gmail.com"
                   className="hover:text-accent transition-colors duration-300"
                 >
-                  hello@maleekphotography.com
+                  maleekshots@gmail.com
                 </a>
               </li>
               <li>Available for travel across the UK</li>

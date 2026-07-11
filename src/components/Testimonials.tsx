@@ -1,4 +1,11 @@
 const testimonials = [
+    {
+    quote:
+      "My graduation shoot with Maleek was everything I hoped for and more. He captured the joy and pride of that moment in a way that truly felt like me. I'll be framing these photos forever.",
+    name: "Ademola A.",
+    role: "Graduate Shoot",
+    initials: "AA",
+  },
   {
     quote:
       "Maleek has an incredible eye for light and emotion. Our pre-wedding shoot was an experience I'll treasure forever — every frame felt like fine art.",
@@ -16,17 +23,11 @@ const testimonials = [
   {
     quote:
       "The fashion editorial he did for my brand was stunning. He understood our vision immediately and delivered something that genuinely stopped people in their tracks.",
-    name: "Leila M.",
+    name: "Deola M.",
     role: "Fashion Brand Founder",
-    initials: "LM",
+    initials: "DM",
   },
-  {
-    quote:
-      "My graduation shoot with Maleek was everything I hoped for and more. He captured the joy and pride of that moment in a way that truly felt like me. I'll be framing these photos forever.",
-    name: "Ademola Ajibade",
-    role: "Graduate Shoot",
-    initials: "AA",
-  },
+
 ];
 
 export default function Testimonials() {
