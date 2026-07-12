@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 function randomPortfolioImage(category: string): string {
   const dir = path.join(process.cwd(), "public", "portfolio", category);
   const files = fs.readdirSync(dir).filter((f) => /\.(jpe?g|png|webp)$/i.test(f));
+  console.log(files)
   const file = files[Math.floor(Math.random() * files.length)];
   return `/portfolio/${category}/${file}`;
 }
@@ -45,7 +46,7 @@ const services = [
       "Birthday & graduation shoots",
       "Maternity shoots",
     ],
-    image: randomPortfolioImage("portraits"),
+    image: "/portfolio/portraits/IMG_5478.jpg",
   },
   {
     icon: Users,
@@ -62,7 +63,7 @@ const services = [
       "Multi-generational portraits",
       "Annual family portraits",
     ],
-    image: randomPortfolioImage("family"),
+    image: "/portfolio/family/IMG_7441.jpg",
   },
   {
     icon: GraduationCap,
@@ -79,7 +80,7 @@ const services = [
       "Group class photos",
       "Solo graduation portraits",
     ],
-    image: randomPortfolioImage("graduation"),
+    image: "/portfolio/graduation/IMG_3771.jpg",
   },
   {
     icon: CalendarDays,
@@ -92,7 +93,7 @@ const services = [
       "Online gallery delivery",
     ],
     perfectFor: ["Birthdays", "Corporate events", "Parties", "Engagements"],
-    image: randomPortfolioImage("events"),
+    image: "/portfolio/events/IMG_7008.jpg",
   },
   {
     icon: Heart,
@@ -105,7 +106,7 @@ const services = [
       "Optional photo book (£200)",
     ],
     perfectFor: ["Engaged couples", "Save-the-date photos", "Anniversary portraits"],
-    image: randomPortfolioImage("pre-wedding"),
+    image: "/portfolio/pre-wedding/IMG_1604.jpg",
   },
   {
     icon: Sparkles,
@@ -118,7 +119,7 @@ const services = [
       "Social media crops included in campaign package",
     ],
     perfectFor: ["Clothing brands", "Fashion designers", "Product campaigns"],
-    image: randomPortfolioImage("fashion"),
+    image: "/portfolio/fashion/IMG_4545.jpg",
   },
   {
     icon: Sun,
@@ -131,7 +132,7 @@ const services = [
       "Up to 10 edited images",
     ],
     perfectFor: ["Content creators", "Personal brands", "Natural storytelling shoots"],
-    image: randomPortfolioImage("maternity"),
+    image: "/portfolio/portraits/IMG_8518.jpg",
   },
   {
     icon: Baby,
@@ -144,7 +145,7 @@ const services = [
       "10 edited images",
     ],
     perfectFor: ["Toddlers & young children", "Birthday portraits", "Milestone memories"],
-    image: randomPortfolioImage("children"),
+    image: "/portfolio/children/IMG_4702.jpg",
   },
 ];
 
