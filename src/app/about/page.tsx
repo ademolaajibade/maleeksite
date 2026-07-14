@@ -71,7 +71,7 @@ export default function AboutPage() {
         title="About"
         accent="Maleek"
         subtitle="Portrait photographer, light chaser, and storyteller based in Southwales, UK."
-        image="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=2000&q=80"
+        image="/about.png"
       />
 
       {/* Main story */}
@@ -79,14 +79,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Image */}
-            <div className="sticky top-28">
+            <div className="relative lg:sticky lg:top-28">
               <div className="relative aspect-3/4 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=900&q=85"
+                  src="/about.png"
                   alt="Maleek — Portrait Photographer"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
               </div>
               <div className="absolute top-5 -left-5 w-full h-full border border-accent/25 pointer-events-none" />
