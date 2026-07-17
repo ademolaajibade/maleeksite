@@ -44,10 +44,10 @@ export default function About() {
           }}
         >
           {/* Image column */}
-          <div className="relative">
-            <div className="relative aspect-3/4 max-w-md mx-auto lg:mx-0 overflow-hidden">
+          <div className="relative max-w-md mx-auto lg:mx-0">
+            <div className="relative aspect-3/4 overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=900&q=85"
+                src="/pp.jpeg"
                 alt="Maleek — Portrait Photographer"
                 fill
                 className="object-cover object-center"
