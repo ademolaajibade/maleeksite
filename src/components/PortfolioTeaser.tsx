@@ -53,6 +53,7 @@ export default function PortfolioTeaser() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {portfolioTeaser.map((item) => (
             <div key={item.src} className="relative aspect-square overflow-hidden group">
+             console.log(item.src)
               <Image
                 src={item.src}
                 alt={item.alt}

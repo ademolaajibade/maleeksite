@@ -44,17 +44,17 @@ export default function About() {
           }}
         >
           {/* Image column */}
-          <div className="relative max-w-md mx-auto lg:mx-0">
+          <div className="relative w-full max-w-md mx-auto lg:mx-0">
             <div className="relative aspect-3/4 overflow-hidden">
               <Image
-                src="/pp.jpeg"
+                src="/ppic.png"
                 alt="Maleek — Portrait Photographer"
                 fill
                 className="object-cover object-center"
               />
             </div>
             {/* Gold accent frame */}
-            <div className="hidden lg:block absolute top-6 -left-6 w-full h-full border border-accent/30 pointer-events-none" />
+            <div className="hidden lg:block absolute inset-0 border border-accent/30 pointer-events-none" />
             {/* Years badge */}
             <div className="absolute -bottom-6 -right-4 lg:-right-8 bg-accent text-black px-6 py-4">
               <p className="font-serif text-4xl font-semibold leading-none">

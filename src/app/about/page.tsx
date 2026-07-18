@@ -82,14 +82,14 @@ export default function AboutPage() {
             <div className="relative lg:sticky lg:top-28">
               <div className="relative aspect-3/4 overflow-hidden">
                 <Image
-                  src="/pp.jpeg"
+                  src="/ppic.png"
                   alt="Maleek — Portrait Photographer"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-center"
                 />
               </div>
-              <div className="absolute top-5 -left-5 w-full h-full border border-accent/25 pointer-events-none" />
+              <div className="absolute inset-0 border border-accent/25 pointer-events-none" />
             </div>
 
             {/* Text */}
@@ -169,18 +169,13 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {process.map((p, i) => (
+            {process.map((p) => (
               <div key={p.step} className="relative">
-                {i < process.length - 1 && (
-                  <div className="hidden lg:block absolute top-6 left-full w-full h-px bg-border z-0" />
-                )}
-                <div className="relative z-10">
-                  <p className="font-serif text-6xl font-light text-accent/20 mb-4 leading-none">
-                    {p.step}
-                  </p>
-                  <h3 className="font-serif text-xl text-foreground font-light mb-3">{p.title}</h3>
-                  <p className="text-muted text-sm leading-relaxed">{p.desc}</p>
-                </div>
+                <p className="font-serif text-6xl font-light text-accent/20 mb-4 leading-none">
+                  {p.step}
+                </p>
+                <h3 className="font-serif text-xl text-foreground font-light mb-3">{p.title}</h3>
+                <p className="text-muted text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
