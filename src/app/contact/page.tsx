@@ -188,7 +188,7 @@ export default function ContactPage() {
                     </div>
                     <div >
                       <p className="text-foreground text-sm font-medium mb-1">Phone Number</p>
-                     <p>07402059301</p>
+                     <p>+44 7402 059301</p>
                     </div>
                   </li>
 

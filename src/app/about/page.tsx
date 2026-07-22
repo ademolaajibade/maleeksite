@@ -102,13 +102,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed text-sm">
                 <p>
-              Photography wasn’t a career I planned to pursue. I started learning it several times, but I kept stopping because I simply wasn’t interested. Somehow, life kept bringing me back to it.
+                    Photography wasn’t a career I planned to pursue. I started learning it several times, but I kept stopping because I simply wasn’t interested. Somehow, life kept bringing me back to it.
                 </p>
                 <p>
-Over time, what felt like an obligation became a passion. The more I learned, the more I fell in love with the art of capturing people, emotions, and moments that last forever.
+                    Over time, what felt like an obligation became a passion. The more I learned, the more I fell in love with the art of capturing people, emotions, and moments that last forever.
                 </p>
                 <p>
-Today, photography is more than just what I do, it’s how I tell stories. Every session is a chance to create memories that my clients can cherish for a lifetime, and I’m grateful I gave this journey one more chance.
+                    Today, photography is more than just what I do, it’s how I tell stories. Every session is a chance to create memories that my clients can cherish for a lifetime, and I’m grateful I gave this journey one more chance.
                 </p>
                 {/* <p>
                   Whether you&apos;re here for a headshot, a family memory, or a full editorial project, you&apos;re getting the same level of attention, care, and artistry. That&apos;s not a promise — it&apos;s just how I work.

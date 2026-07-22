@@ -110,7 +110,7 @@ export default function Footer() {
             <p className="text-accent text-xs tracking-[0.4em] uppercase mb-6">Get in Touch</p>
             <ul className="space-y-3 text-sm text-muted-foreground mb-8">
               <li>Southwales, United Kingdom</li>
-              <li>07402059301</li>
+              <li>+44 7402 059301 </li>
               <li>
                 <a
                   href="mailto:maleekshots@gmail.com"
