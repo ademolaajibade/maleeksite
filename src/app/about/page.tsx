@@ -102,18 +102,22 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed text-sm">
                 <p>
-                  Growing up in Lagos, I was always the one with a phone camera glued to my eye, chasing light through streets and people. What started as a habit became a calling the moment I handed someone their portrait and watched their face change — that recognition of self, that surprise of beauty they didn&apos;t know they carried.
+              Photography wasn’t a career I planned to pursue. I started learning it several times, but I kept stopping because I simply wasn’t interested. Somehow, life kept bringing me back to it.
                 </p>
                 <p>
-                  I studied photography formally, trained under some of the best portrait artists on the continent, and spent years refining my eye across West Africa and beyond. But the biggest lessons came from the people in front of my lens — learning to be still, to be patient, to earn the trust that makes a portrait transcend being just a photo.
+Over time, what felt like an obligation became a passion. The more I learned, the more I fell in love with the art of capturing people, emotions, and moments that last forever.
                 </p>
                 <p>
-                  Today, I run what i grew up to do as a hobby with a simple mission: to make every person I photograph feel seen — truly, completely seen. Not as a subject, but as a soul with a story worth telling and a face worth remembering.
+Today, photography is more than just what I do, it’s how I tell stories. Every session is a chance to create memories that my clients can cherish for a lifetime, and I’m grateful I gave this journey one more chance.
                 </p>
-                <p>
+                {/* <p>
                   Whether you&apos;re here for a headshot, a family memory, or a full editorial project, you&apos;re getting the same level of attention, care, and artistry. That&apos;s not a promise — it&apos;s just how I work.
-                </p>
+                </p> */}
               </div>
+
+
+
+
 
               {/* Stats */}
               <div className="grid grid-cols-2 gap-5 mt-12">
