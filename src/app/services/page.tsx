@@ -232,7 +232,7 @@ export default function ServicesPage() {
             href="/contact"
             className="inline-flex items-center px-10 py-4 bg-accent text-black text-xs tracking-[0.25em] uppercase font-semibold hover:bg-accent-light transition-colors duration-300"
           >
-            Get in Touch
+            Get in Touch. 
           </Link>
         </div>
       </section>
