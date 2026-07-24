@@ -7,9 +7,12 @@ import PageHeader from "@/components/PageHeader";
 
 
 export const metadata: Metadata = {
-  title: "Services | Maleek Photography",
+  title: "Services",
   description:
     "Portrait sessions, family shoots, events, graduation, fashion, lifestyle, and pre-wedding photography by Maleek — South Wales, UK.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 function randomPortfolioImage(category: string): string {

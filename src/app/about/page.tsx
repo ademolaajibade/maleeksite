@@ -5,9 +5,12 @@ import PageHeader from "@/components/PageHeader";
 import { Camera, Heart, Eye, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About | Maleek Photography",
+  title: "About",
   description:
-    "Learn about Maleek — portrait photographer based in Southwales, UK. My story, philosophy, and approach to capturing authentic people.",
+    "Learn about Maleek — portrait photographer based in South Wales, UK. My story, philosophy, and approach to capturing authentic people.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const stats = [

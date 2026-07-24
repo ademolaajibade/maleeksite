@@ -4,9 +4,12 @@ import PageHeader from "@/components/PageHeader";
 import PricingTabs from "@/components/PricingTabs";
 
 export const metadata: Metadata = {
-  title: "Pricing | Maleek Photography",
+  title: "Pricing",
   description:
     "Transparent photography pricing by Maleek — portrait, family, graduation, events, pre-wedding, fashion, lifestyle, and children's shoots in South Wales, UK.",
+  alternates: {
+    canonical: "/pricing",
+  },
 };
 
 const addons = [

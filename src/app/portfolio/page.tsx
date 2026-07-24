@@ -1,7 +1,17 @@
+import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import PortfolioGrid, { type PortfolioImage } from "@/components/PortfolioGrid";
+
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description:
+    "Browse portrait, fashion, family, events, maternity, and pre-wedding photography by Maleek — South Wales, UK.",
+  alternates: {
+    canonical: "/portfolio",
+  },
+};
 
 const CATEGORY_FOLDERS: { folder: string; label: string }[] = [
   { folder: "portraits", label: "Portraits" },
