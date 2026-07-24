@@ -4,16 +4,7 @@ import path from "path";
 import Link from "next/link";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
-import {
-  Camera,
-  Users,
-  Sparkles,
-  Heart,
-  CalendarDays,
-  GraduationCap,
-  Sun,
-  Baby,
-} from "lucide-react";
+
 
 export const metadata: Metadata = {
   title: "Services | Maleek Photography",
@@ -31,7 +22,6 @@ function randomPortfolioImage(category: string): string {
 
 const services = [
   {
-    icon: Camera,
     title: "Portrait Photography",
     desc: "Individual portrait sessions crafted to capture who you truly are. Studio-based, relaxed, and tailored to your personality — whether it's personal branding, creative portraits, birthday, graduation, or maternity shoots.",
     includes: [
@@ -49,7 +39,6 @@ const services = [
     image: "/portfolio/portraits/IMG_5478.jpg",
   },
   {
-    icon: Users,
     title: "Family Photography",
     desc: "Candid, joyful, and timeless. Family sessions capture the chaos, the laughter, and the love that make your family uniquely yours — all within a relaxed studio environment.",
     includes: [
@@ -66,7 +55,18 @@ const services = [
     image: "/portfolio/family/IMG_7441.jpg",
   },
   {
-    icon: GraduationCap,
+    title: "Maternity Photography",
+    desc: "Celebrating the beauty of expecting a new life. Relaxed outdoor sessions designed to capture the glow of this season — solo or with your partner, with a natural, timeless feel.",
+    includes: [
+      "Outdoor location",
+      "Packages from £165",
+      "Professionally retouched images",
+      "Personal & couple images included",
+    ],
+    perfectFor: ["Baby bump shoots", "Couple maternity portraits", "Maternity announcements"],
+    image: "/portfolio/maternity/IMG_2363.jpg",
+  },
+  {
     title: "Convocation & Graduation",
     desc: "Mark your academic achievement with portraits that do the moment justice. From solo campus shoots to group graduation packages, I capture the pride and joy of graduation day.",
     includes: [
@@ -83,7 +83,6 @@ const services = [
     image: "/portfolio/graduation/IMG_3771.jpg",
   },
   {
-    icon: CalendarDays,
     title: "Events Coverage",
     desc: "Birthdays, corporate events, parties, and engagements — I document events with a photojournalistic eye, capturing the energy, the emotion, and every detail that matters.",
     includes: [
@@ -96,7 +95,6 @@ const services = [
     image: "/portfolio/events/IMG_7008.jpg",
   },
   {
-    icon: Heart,
     title: "Pre-Wedding Shoots",
     desc: "Before the big day, a story of the two of you. Intimate, romantic, and effortless — pre-wedding sessions capture the love that led you here in timeless images you'll treasure forever.",
     includes: [
@@ -109,7 +107,6 @@ const services = [
     image: "/portfolio/pre-wedding/IMG_1604.jpg",
   },
   {
-    icon: Sparkles,
     title: "Fashion Collection Shoot",
     desc: "High-concept, visually striking fashion photography for clothing brands, designers, and creatives. From clean studio starter collections to full commercial brand campaigns with social media crops.",
     includes: [
@@ -122,7 +119,6 @@ const services = [
     image: "/portfolio/fashion/IMG_4545.jpg",
   },
   {
-    icon: Sun,
     title: "Lifestyle Photography",
     desc: "Natural, authentic, and story-driven. Lifestyle sessions capture you in your element — whether a single-location shoot or a multi-scene narrative across different settings.",
     includes: [
@@ -135,7 +131,6 @@ const services = [
     image: "/portfolio/portraits/IMG_8518.jpg",
   },
   {
-    icon: Baby,
     title: "Children Photography",
     desc: "Playful, heartfelt, and full of personality. Children's sessions are handled with patience and creativity, giving your little ones the space to be themselves while I capture the magic.",
     includes: [
@@ -163,7 +158,6 @@ export default function ServicesPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 space-y-24">
           {services.map((service, i) => {
-            const Icon = service.icon;
             const reverse = i % 2 !== 0;
             return (
               <div
@@ -180,9 +174,7 @@ export default function ServicesPage() {
                   />
                 </div>
                 <div className={reverse ? "lg:order-1 lg:pr-8" : "lg:pl-8"}>
-                  <div className="w-12 h-12 border border-accent/30 flex items-center justify-center mb-6">
-                    <Icon size={18} className="text-accent" strokeWidth={1.5} />
-                  </div>
+               
                   <h2 className="font-serif text-3xl md:text-4xl font-light text-foreground mb-5">
                     {service.title}
                   </h2>

@@ -111,6 +111,35 @@ const servicePricing: ServicePricing[] = [
     ],
   },
   {
+    id: "maternity",
+    label: "Maternity",
+    tiers: [
+      {
+        name: "Essential Maternity",
+        price: "£165",
+        features: [
+          "1.5 Hour Session",
+          "1 Outfit",
+          "5 professionally retouched images (3 personal / 2 couple)",
+          "Outdoor location",
+        ],
+      },
+      {
+        name: "Signature Maternity",
+        price: "£300",
+        highlight: true,
+        features: [
+          "2.5 Hour Session",
+          "2 Outfits",
+          "10 professionally retouched images (5 personal / 5 couple)",
+          "Outdoor location",
+        ],
+      },
+    ],
+    perfectFor: ["Baby bump shoots", "Couple maternity portraits", "Maternity announcements"],
+    note: "Extra edited images £15 each · Images are first sent as low-res previews for your selection · Prices exclude logistics, depending on location",
+  },
+  {
     id: "graduation",
     label: "Graduation",
     tiers: [

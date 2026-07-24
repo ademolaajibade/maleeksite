@@ -144,14 +144,12 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {values.map(({ icon: Icon, title, desc }) => (
+            {values.map(({ title, desc }) => (
               <div
                 key={title}
                 className="flex gap-6 p-8 border border-border hover:border-accent/40 transition-colors duration-300"
               >
-                <div className="w-12 h-12 shrink-0 border border-accent/30 flex items-center justify-center">
-                  <Icon size={18} className="text-accent" strokeWidth={1.5} />
-                </div>
+               
                 <div>
                   <h3 className="font-serif text-xl text-foreground font-light mb-3">{title}</h3>
                   <p className="text-muted text-sm leading-relaxed">{desc}</p>

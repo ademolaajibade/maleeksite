@@ -1,39 +1,32 @@
 import Link from "next/link";
-import { Camera, Sparkles, Heart, Star, Users, Briefcase } from "lucide-react";
 
 const services = [
   {
-    icon: Camera,
     title: "Portrait Sessions",
     desc: "Solo portraits crafted to reveal who you truly are — studio or outdoor.",
     href: "/services",
   },
   {
-    icon: Sparkles,
     title: "Fashion & Editorial",
     desc: "High-concept fashion photography for brands, creatives, and models.",
     href: "/services",
   },
   {
-    icon: Heart,
     title: "Pre-Wedding Shoots",
     desc: "Romantic, effortless sessions that capture the love before the big day.",
     href: "/services",
   },
   {
-    icon: Star,
     title: "Events Coverage",
     desc: "Birthdays, graduations, brand launches — every moment documented.",
     href: "/services",
   },
   {
-    icon: Users,
     title: "Family Portraits",
     desc: "Candid and timeless. The laughter, chaos, and love — all in one frame.",
     href: "/services",
   },
   {
-    icon: Briefcase,
     title: "Professional Headshots",
     desc: "Corporate and LinkedIn portraits that command attention and convey authority.",
     href: "/services",
@@ -56,15 +49,12 @@ export default function ServicesTeaser() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
           {services.map((service) => {
-            const Icon = service.icon;
             return (
               <div
                 key={service.title}
                 className="bg-surface-alt p-8 group hover:bg-background transition-colors duration-300"
               >
-                <div className="w-11 h-11 border border-accent/30 flex items-center justify-center mb-6 group-hover:border-accent transition-colors duration-300">
-                  <Icon size={16} className="text-accent" strokeWidth={1.5} />
-                </div>
+              
                 <h3 className="font-serif text-xl font-light text-foreground mb-3">
                   {service.title}
                 </h3>
