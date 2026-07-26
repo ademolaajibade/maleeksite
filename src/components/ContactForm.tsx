@@ -69,7 +69,7 @@ export default function ContactForm() {
         title="Book a"
         accent="Session"
         subtitle="Fill in the form and I'll get back to you within 24 hours."
-        image="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=2000&q=80"
+        image="/about.png"
       />
 
       <section className="py-24">
