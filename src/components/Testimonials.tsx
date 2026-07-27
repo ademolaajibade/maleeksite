@@ -1,7 +1,7 @@
 const testimonials = [
     {
     quote:
-      "My graduation shoot with Maleek was everything I hoped for and more. He captured the joy and pride of that moment in a way that truly felt like me. I'll be framing these photos forever. LEEKY BOBO! what a great guy 😂",
+      "My graduation shoot with Maleek was everything I hoped for and more. He captured the joy and pride of that moment in a way that truly felt like me. I'll be framing these photos forever. LEEKY BOY! what a great guy 😂",
     name: "Ademola A.",
     role: "Graduate Shoot",
     initials: "AA",
