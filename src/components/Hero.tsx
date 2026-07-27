@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/portfolio/pre-wedding/IMG_1594.jpg"
-          alt="Portrait photography hero"
+          alt="Portrait and pre-wedding photographer in South Wales, UK"
           fill
           priority
           sizes="100vw"
@@ -50,9 +50,9 @@ export default function Hero() {
           transition: "opacity 1.2s ease, transform 1.2s ease",
         }}
       >
-        {/* <p className="text-accent text-xs tracking-[0.4em] uppercase mb-8 font-sans font-medium">
-          Portrait Photography Studio
-        </p> */}
+        <p className="text-accent text-xs tracking-[0.4em] uppercase mb-8 font-sans font-medium">
+          Portrait Photographer in South Wales, UK
+        </p>
         <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-light text-foreground leading-none mb-6 tracking-tight">
           Capturing
           <br />

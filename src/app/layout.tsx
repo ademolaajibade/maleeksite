@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 const siteUrl = "https://maleekshotit.com";
 const siteName = "Maleek Shot It Photography";
 const siteDescription =
-  "Portrait photographer based in South Wales, UK. Specializing in portraits, fashion, events, and pre-wedding shoots.";
+  "Portrait photographer based in South Wales, UK. Specializing in portraits, family, maternity, graduation, fashion, events, and pre-wedding photography.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -49,19 +49,48 @@ export const metadata: Metadata = {
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["ProfessionalService", "Photographer"],
   name: siteName,
   image: `${siteUrl}/logo.png`,
   url: siteUrl,
   telephone: "+44 7402 059301",
   email: "maleekshots@gmail.com",
   description: siteDescription,
+  priceRange: "££",
   address: {
     "@type": "PostalAddress",
-    addressRegion: "South Wales",
+    addressRegion: "Wales",
     addressCountry: "GB",
   },
-  areaServed: "United Kingdom",
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "South Wales" },
+    { "@type": "City", name: "Cardiff" },
+    { "@type": "City", name: "Newport" },
+    { "@type": "City", name: "Swansea" },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Photography Services",
+    itemListElement: [
+      "Portrait Photography",
+      "Family Photography",
+      "Maternity Photography",
+      "Convocation & Graduation Photography",
+      "Events Coverage",
+      "Pre-Wedding Photography",
+      "Fashion Collection Shoot",
+      "Lifestyle Photography",
+      "Children Photography",
+    ].map((name) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name },
+    })),
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "4",
+  },
   sameAs: [
     "https://instagram.com/maleekshot_it",
     "https://tiktok.com/maleekshot_it",

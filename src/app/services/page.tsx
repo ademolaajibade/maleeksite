@@ -7,9 +7,9 @@ import PageHeader from "@/components/PageHeader";
 
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Photography Services | Portrait, Family, Maternity & Wedding — South Wales",
   description:
-    "Portrait sessions, family shoots, events, graduation, fashion, lifestyle, and pre-wedding photography by Maleek — South Wales, UK.",
+    "Portrait sessions, family shoots, maternity, events, graduation, fashion, lifestyle, and pre-wedding photography by Maleek, a professional photographer serving South Wales, UK.",
   alternates: {
     canonical: "/services",
   },
@@ -156,6 +156,7 @@ export default function ServicesPage() {
         accent="Services"
         subtitle="Every session is tailored to you — your personality, your vision, your story."
         image={randomPortfolioImage("birthday")}
+        imageAlt="Photography services by Maleek in South Wales, UK"
       />
 
       <section className="py-24">

@@ -5,9 +5,9 @@ import Link from "next/link";
 import PortfolioGrid, { type PortfolioImage } from "@/components/PortfolioGrid";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Photography Portfolio | Portraits, Family & Weddings — South Wales",
   description:
-    "Browse portrait, fashion, family, events, maternity, and pre-wedding photography by Maleek — South Wales, UK.",
+    "Browse real portrait, fashion, family, events, maternity, graduation, and pre-wedding photography by Maleek, a South Wales, UK photographer.",
   alternates: {
     canonical: "/portfolio",
   },
@@ -41,10 +41,7 @@ function readCategoryImages(folder: string, label: string): PortfolioImage[] {
 
   return files.map((file, i) => ({
     src: `/portfolio/${folder}/${file}`,
-    alt: path
-      .basename(file, path.extname(file))
-      .replace(/[-_]/g, " ")
-      .trim() || `${label} photo`,
+    alt: `${label} photography by Maleek in South Wales, UK — sample ${i + 1}`,
     category: label,
     span: i % 5 === 0 ? "row-span-2" : undefined,
   }));

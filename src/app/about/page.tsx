@@ -5,9 +5,9 @@ import PageHeader from "@/components/PageHeader";
 import { Camera, Heart, Eye, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Maleek | Portrait Photographer in South Wales",
   description:
-    "Learn about Maleek — portrait photographer based in South Wales, UK. My story, philosophy, and approach to capturing authentic people.",
+    "Meet Maleek, a portrait and lifestyle photographer based in South Wales, UK. Learn my story, philosophy, and approach to capturing authentic portraits, family, and event photography.",
   alternates: {
     canonical: "/about",
   },
@@ -75,6 +75,7 @@ export default function AboutPage() {
         accent="Maleek"
         subtitle="Portrait photographer, light chaser, and storyteller based in Southwales, UK."
         image="/about.png"
+        imageAlt="Maleek, portrait photographer based in South Wales, UK"
       />
 
       {/* Main story */}

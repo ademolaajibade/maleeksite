@@ -31,7 +31,7 @@ function firstCategoryImage(folder: string, label: string) {
   if (files.length === 0) return null;
   return {
     src: `/portfolio/${folder}/${files[0]}`,
-    alt: `${label} sample`,
+    alt: `${label} photography by Maleek in South Wales, UK`,
     category: label,
   };
 }

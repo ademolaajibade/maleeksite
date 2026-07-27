@@ -6,14 +6,15 @@ interface PageHeaderProps {
   accent: string;
   subtitle: string;
   image: string;
+  imageAlt?: string;
 }
 
-export default function PageHeader({ eyebrow, title, accent, subtitle, image }: PageHeaderProps) {
+export default function PageHeader({ eyebrow, title, accent, subtitle, image, imageAlt }: PageHeaderProps) {
   return (
     <div className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
       <Image
         src={image}
-        alt={title}
+        alt={imageAlt ?? `${title} ${accent}`}
         fill
         priority
         sizes="100vw"

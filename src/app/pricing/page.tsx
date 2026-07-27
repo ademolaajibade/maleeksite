@@ -4,9 +4,9 @@ import PageHeader from "@/components/PageHeader";
 import PricingTabs from "@/components/PricingTabs";
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Photography Pricing & Packages | South Wales Photographer",
   description:
-    "Transparent photography pricing by Maleek — portrait, family, graduation, events, pre-wedding, fashion, lifestyle, and children's shoots in South Wales, UK.",
+    "Transparent photography pricing by Maleek — portrait, family, graduation, events, pre-wedding, fashion, lifestyle, and children's photography packages in South Wales, UK.",
   alternates: {
     canonical: "/pricing",
   },
@@ -26,7 +26,8 @@ export default function PricingPage() {
         title="Simple"
         accent="Pricing"
         subtitle="No hidden fees. No surprises. Just great photography at a fair price."
-        image="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=2000&q=80"
+        image="/about.png"
+        imageAlt="Photography pricing and packages — South Wales photographer"
       />
 
       <PricingTabs />
