@@ -86,7 +86,7 @@ export default function AboutPage() {
             <div className="relative lg:sticky lg:top-28">
               <div className="relative aspect-3/4 overflow-hidden">
                 <Image
-                  src="/ppic.png"
+                  src="/profile.jpeg"
                   alt="Maleek — Portrait Photographer"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

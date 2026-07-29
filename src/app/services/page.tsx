@@ -39,7 +39,7 @@ const services = [
       "Birthday & graduation shoots",
       "Maternity shoots",
     ],
-    image: "/portfolio/portraits/IMG_5478.jpg",
+    image: "/portfolio/portraits/portrait1.jpeg",
   },
   {
     title: "Family Photography",
@@ -67,7 +67,7 @@ const services = [
       "Personal & couple images included",
     ],
     perfectFor: ["Baby bump shoots", "Couple maternity portraits", "Maternity announcements"],
-    image: "/portfolio/maternity/IMG_2363.jpg",
+    image: "/portfolio/maternity/maternity1.jpeg",
   },
   {
     title: "Convocation & Graduation",
@@ -83,7 +83,7 @@ const services = [
       "Group class photos",
       "Solo graduation portraits",
     ],
-    image: "/portfolio/graduation/IMG_3771.jpg",
+    image: "/portfolio/graduation/graduation1.jpeg",
   },
   {
     title: "Events Coverage",

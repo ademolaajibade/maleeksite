@@ -85,9 +85,10 @@ export default function ContactForm() {
                      <Image
                                         src='/location.png'
                                         alt='location'
-                                        
-                                        width="28" 
+
+                                        width="28"
                                         height="28"
+                                        style={{ width: "auto", height: "auto" }}
                                         // className="object-cover object-center"
                                         className="text-accent"
                                       />
@@ -104,9 +105,10 @@ export default function ContactForm() {
                      <Image
                                         src='/email.png'
                                         alt='email'
-                                        
-                                        width="28" 
+
+                                        width="28"
                                         height="28"
+                                        style={{ width: "auto", height: "auto" }}
                                         // className="object-cover object-center"
                                         className="text-accent"
                                       />
@@ -115,7 +117,7 @@ export default function ContactForm() {
                     <div>
                       <p className="text-foreground text-sm font-medium mb-1">Email</p>
                       <a
-                        href="mailto:hello@maleekshots@gmail.com"
+                        href="mailto:maleekshots@gmail.com"
                         className="text-muted-foreground text-sm hover:text-accent transition-colors duration-300"
                       >
                         maleekshots@gmail.com
@@ -127,9 +129,10 @@ export default function ContactForm() {
                        <Image
                                         src='/instagram.png'
                                         alt='instagram'
-                                        
-                                        width="28" 
+
+                                        width="28"
                                         height="28"
+                                        style={{ width: "auto", height: "auto" }}
                                         // className="object-cover object-center"
                                         className="text-accent"
                                       />
@@ -151,9 +154,10 @@ export default function ContactForm() {
                     <Image
                                         src='/tiktok.png'
                                         alt='tiktok'
-                                        
-                                        width="28" 
+
+                                        width="28"
                                         height="28"
+                                        style={{ width: "auto", height: "auto" }}
                                         // className="object-cover object-center"
                                         className="text-accent"
                                       />
@@ -162,7 +166,8 @@ export default function ContactForm() {
                     <div>
                       <p className="text-foreground text-sm font-medium mb-1">TikTok</p>
                       <a
-                        href="https://tiktok.com/maleekshot_it"
+                        href="https://tiktok.com/@maleekshot_it" 
+                        
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground text-sm hover:text-accent transition-colors duration-300"
@@ -178,9 +183,10 @@ export default function ContactForm() {
                      <Image
                                         src='/phone.png'
                                         alt='phone'
-                                        
-                                        width="28" 
+
+                                        width="28"
                                         height="28"
+                                        style={{ width: "auto", height: "auto" }}
                                         // className="object-cover object-center"
                                         className="text-accent"
                                       />
