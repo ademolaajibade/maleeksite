@@ -47,9 +47,10 @@ export default function About() {
           <div className="relative w-full max-w-md mx-auto lg:mx-0">
             <div className="relative aspect-3/4 overflow-hidden">
               <Image
-                src="/ppic.png"
+                src="/profile.jpeg"
                 alt="Maleek — Portrait Photographer"
                 fill
+                sizes="(min-width: 1024px) 28rem, 100vw"
                 className="object-cover object-center"
               />
             </div>
