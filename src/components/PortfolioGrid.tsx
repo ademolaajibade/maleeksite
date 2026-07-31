@@ -84,6 +84,7 @@ export default function PortfolioGrid({
                   fill
                   sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  priority={i === 0}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300 flex items-end p-5 opacity-0 group-hover:opacity-100">
                   <div>

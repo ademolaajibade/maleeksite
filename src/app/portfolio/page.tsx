@@ -23,6 +23,7 @@ const CATEGORY_FOLDERS: { folder: string; label: string }[] = [
   { folder: "graduation", label: "Graduation" },
   { folder: "children", label: "Children" },
   { folder: "family", label: "Family" },
+  { folder: "lifestyle", label: "Lifestyle" },
 ];
 
 const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
