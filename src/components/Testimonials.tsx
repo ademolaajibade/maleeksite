@@ -9,7 +9,7 @@ const testimonials = [
   {
     quote:
       "Maleek has an incredible eye for light and emotion. Our pre-wedding shoot was an experience I'll treasure forever — every frame felt like fine art.",
-    name: "Amara & Tobi",
+    name: "Blessing & Ofiah",
     role: "Pre-Wedding Clients",
     initials: "AT",
   },
