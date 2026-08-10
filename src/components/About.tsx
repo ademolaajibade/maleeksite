@@ -78,7 +78,7 @@ export default function About() {
               <span className="italic text-accent">Authentic</span> Souls
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Hi, I&apos;m Lukmon, a portrait and lifestyle photographer based in the
+              Hi, I&apos;m Maleek, a portrait and lifestyle photographer based in the
               southwales UK, specializing in portraits, fashion, events, and
               pre-wedding shoots. My goal is to create images that feel
               authentic, timeless, and cinematic.{" "}
