@@ -79,7 +79,7 @@ export default function About() {
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Hi, I&apos;m Maleek, a portrait and lifestyle photographer based in the
-              southwales UK, specializing in portraits, fashion, events, and
+              Southwales UK, specializing in portraits, fashion, events, and
               pre-wedding shoots. My goal is to create images that feel
               authentic, timeless, and cinematic.{" "}
             </p>
