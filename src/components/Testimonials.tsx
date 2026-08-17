@@ -16,9 +16,9 @@ const testimonials = [
   {
     quote:
       "I was nervous in front of the camera but Maleek made me feel so at ease. The headshots came out better than I ever imagined. Absolutely worth every penny.",
-    name: "James O.",
+    name: "Mike O.",
     role: "Corporate Headshot",
-    initials: "JO",
+    initials: "MO",
   },
   {
     quote:
