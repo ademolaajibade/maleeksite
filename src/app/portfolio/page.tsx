@@ -4,12 +4,29 @@ import path from "path";
 import Link from "next/link";
 import PortfolioGrid, { type PortfolioImage } from "@/components/PortfolioGrid";
 
+const pageTitle = "Photography Portfolio | Portraits, Family & Weddings — South Wales";
+const pageDescription =
+  "Browse real portrait, fashion, family, events, maternity, graduation, and pre-wedding photography by Maleek, a South Wales, UK photographer.";
+
 export const metadata: Metadata = {
-  title: "Photography Portfolio | Portraits, Family & Weddings — South Wales",
-  description:
-    "Browse real portrait, fashion, family, events, maternity, graduation, and pre-wedding photography by Maleek, a South Wales, UK photographer.",
+  title: pageTitle,
+  description: pageDescription,
   alternates: {
     canonical: "/portfolio",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Maleek Shot It Photography",
+    url: "/portfolio",
+    title: pageTitle,
+    description: pageDescription,
+    images: [{ url: "/portfolio/portraits/p2.jpeg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/portfolio/portraits/p2.jpeg"],
   },
 };
 

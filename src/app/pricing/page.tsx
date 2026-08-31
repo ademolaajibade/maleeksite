@@ -3,12 +3,29 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import PricingTabs from "@/components/PricingTabs";
 
+const pageTitle = "Photography Pricing & Packages | South Wales Photographer";
+const pageDescription =
+  "Transparent photography pricing by Maleek — portrait, family, graduation, events, pre-wedding, fashion, lifestyle, and children's photography packages in South Wales, UK.";
+
 export const metadata: Metadata = {
-  title: "Photography Pricing & Packages | South Wales Photographer",
-  description:
-    "Transparent photography pricing by Maleek — portrait, family, graduation, events, pre-wedding, fashion, lifestyle, and children's photography packages in South Wales, UK.",
+  title: pageTitle,
+  description: pageDescription,
   alternates: {
     canonical: "/pricing",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Maleek Shot It Photography",
+    url: "/pricing",
+    title: pageTitle,
+    description: pageDescription,
+    images: [{ url: "/portfolio/portraits/p2.jpeg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/portfolio/portraits/p2.jpeg"],
   },
 };
 

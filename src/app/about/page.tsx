@@ -4,12 +4,29 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import { Camera, Heart, Eye, Award } from "lucide-react";
 
+const pageTitle = "About Maleek | Portrait Photographer in South Wales";
+const pageDescription =
+  "Meet Maleek, a portrait and lifestyle photographer based in South Wales, UK. Learn my story, philosophy, and approach to capturing authentic portraits, family, and event photography.";
+
 export const metadata: Metadata = {
-  title: "About Maleek | Portrait Photographer in South Wales",
-  description:
-    "Meet Maleek, a portrait and lifestyle photographer based in South Wales, UK. Learn my story, philosophy, and approach to capturing authentic portraits, family, and event photography.",
+  title: pageTitle,
+  description: pageDescription,
   alternates: {
     canonical: "/about",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Maleek Shot It Photography",
+    url: "/about",
+    title: pageTitle,
+    description: pageDescription,
+    images: [{ url: "/about.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/about.png"],
   },
 };
 

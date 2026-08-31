@@ -6,12 +6,29 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 
+const pageTitle = "Photography Services | Portrait, Family, Maternity & Wedding — South Wales";
+const pageDescription =
+  "Portrait sessions, family shoots, maternity, events, graduation, fashion, lifestyle, and pre-wedding photography by Maleek, a professional photographer serving South Wales, UK.";
+
 export const metadata: Metadata = {
-  title: "Photography Services | Portrait, Family, Maternity & Wedding — South Wales",
-  description:
-    "Portrait sessions, family shoots, maternity, events, graduation, fashion, lifestyle, and pre-wedding photography by Maleek, a professional photographer serving South Wales, UK.",
+  title: pageTitle,
+  description: pageDescription,
   alternates: {
     canonical: "/services",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Maleek Shot It Photography",
+    url: "/services",
+    title: pageTitle,
+    description: pageDescription,
+    images: [{ url: "/portfolio/portraits/portrait1.jpeg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/portfolio/portraits/portrait1.jpeg"],
   },
 };
 
