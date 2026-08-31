@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
@@ -50,8 +51,18 @@ export default function Hero() {
           transition: "opacity 1.2s ease, transform 1.2s ease",
         }}
       >
-        <p className="text-accent text-xs tracking-[0.4em] uppercase mb-8 font-sans font-medium">
-          Cardiff · Newport · Swansea
+        <p className="text-accent text-xs tracking-[0.4em] uppercase mb-8 font-sans font-medium flex items-center justify-center gap-3">
+          <Link href="/locations/cardiff" className="hover:text-accent-light transition-colors">
+            Cardiff
+          </Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/locations/newport" className="hover:text-accent-light transition-colors">
+            Newport
+          </Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/locations/swansea" className="hover:text-accent-light transition-colors">
+            Swansea
+          </Link>
         </p>
         <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-light text-foreground leading-none mb-6 tracking-tight">
           South Wales’

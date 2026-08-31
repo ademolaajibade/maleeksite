@@ -10,6 +10,12 @@ const navLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
+const locationLinks = [
+  { label: "Cardiff Photographer", href: "/locations/cardiff" },
+  { label: "Newport Photographer", href: "/locations/newport" },
+  { label: "Swansea Photographer", href: "/locations/swansea" },
+];
+
 const socials = [
   {
     label: "Instagram",
@@ -93,6 +99,20 @@ export default function Footer() {
             <p className="text-accent text-xs tracking-[0.4em] uppercase mb-6">Navigation</p>
             <ul className="space-y-3">
               {navLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-muted-foreground text-sm hover:text-accent transition-colors duration-300"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <p className="text-accent text-xs tracking-[0.4em] uppercase mb-6 mt-10">Locations</p>
+            <ul className="space-y-3">
+              {locationLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
