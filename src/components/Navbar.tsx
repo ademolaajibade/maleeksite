@@ -38,6 +38,12 @@ export default function Navbar() {
     setMenuOpen(false);
   }, [pathname]);
 
+  const handleNavClick = (href: string) => {
+    if (pathname === href) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   const toggleTheme = () => {
     const next = !isLight;
     setIsLight(next);
@@ -58,7 +64,11 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link
+            href="/"
+            onClick={() => handleNavClick("/")}
+            className="flex items-center gap-3 group"
+          >
             <span className="inline-flex rounded-lg overflow-hidden shrink-0 ring-1 ring-accent/30 shadow-[0_0_10px_rgba(201,168,76,0.2)]">
               <Image
                 src="/logo.png"
@@ -85,6 +95,7 @@ export default function Navbar() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
+                    onClick={() => handleNavClick(link.href)}
                     className={`text-xs tracking-widest uppercase transition-colors duration-300 ${
                       isActive
                         ? "text-accent"
@@ -156,6 +167,7 @@ export default function Navbar() {
           <Link
             key={link.label}
             href={link.href}
+            onClick={() => handleNavClick(link.href)}
             className="font-serif text-3xl font-light tracking-widest text-foreground hover:text-accent transition-colors"
           >
             {link.label}

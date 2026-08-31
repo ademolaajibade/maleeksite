@@ -86,11 +86,6 @@ const localBusinessJsonLd = {
       itemOffered: { "@type": "Service", name },
     })),
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    reviewCount: "4",
-  },
   sameAs: [
     "https://instagram.com/maleekshot_it",
     "https://tiktok.com/maleekshot_it",
