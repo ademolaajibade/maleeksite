@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPortfolioImages } from "@/lib/portfolio-images";
 import { CITIES, CITY_KEYS } from "@/lib/locations";
+import { getAllPosts } from "@/lib/blog";
 
 const siteUrl = "https://maleekshotit.com";
 
@@ -38,5 +39,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         images: [abs(city.heroImage), ...city.gallery.map((img) => abs(img.src))],
       };
     }),
+    {
+      url: `${siteUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    ...getAllPosts().map((post) => ({
+      url: `${siteUrl}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      images: [abs(post.coverImage)],
+    })),
   ];
 }
