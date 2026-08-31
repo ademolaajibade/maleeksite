@@ -30,7 +30,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/portfolio/pre-wedding/IMG_1594.jpg"
+          src="/portfolio/pre-wedding/pre-wedding-photography-south-wales-1.jpg"
           alt="Portrait and pre-wedding photographer in South Wales, UK"
           fill
           priority

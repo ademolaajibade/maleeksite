@@ -10,11 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const portfolioImages = getAllPortfolioImages().map((img) => abs(img.src));
 
   const pageImages: Record<string, string[]> = {
-    "": [abs("/portfolio/pre-wedding/IMG_1594.jpg")],
+    "": [abs("/portfolio/pre-wedding/pre-wedding-photography-south-wales-1.jpg")],
     "/about": [abs("/about.png")],
     "/portfolio": portfolioImages,
-    "/services": [abs("/portfolio/portraits/portrait1.jpeg")],
-    "/pricing": [abs("/portfolio/portraits/p2.jpeg")],
+    "/services": [abs("/portfolio/portraits/portraits-photography-south-wales-5.jpeg")],
+    "/pricing": [abs("/portfolio/portraits/portraits-photography-south-wales-4.jpeg")],
     "/contact": [abs("/profile.jpeg")],
   };
 

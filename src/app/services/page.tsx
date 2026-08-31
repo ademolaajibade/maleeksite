@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     url: "/services",
     title: pageTitle,
     description: pageDescription,
-    images: [{ url: "/portfolio/portraits/portrait1.jpeg" }],
+    images: [{ url: "/portfolio/portraits/portraits-photography-south-wales-5.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: pageTitle,
     description: pageDescription,
-    images: ["/portfolio/portraits/portrait1.jpeg"],
+    images: ["/portfolio/portraits/portraits-photography-south-wales-5.jpeg"],
   },
 };
 
@@ -56,7 +56,7 @@ const services = [
       "Birthday & graduation shoots",
       "Maternity shoots",
     ],
-    image: "/portfolio/portraits/portrait1.jpeg",
+    image: "/portfolio/portraits/portraits-photography-south-wales-5.jpeg",
   },
   {
     title: "Family Photography",
@@ -72,7 +72,7 @@ const services = [
       "Multi-generational portraits",
       "Annual family portraits",
     ],
-    image: "/portfolio/family/IMG_7441.jpg",
+    image: "/portfolio/family/family-photography-south-wales-2.jpg",
   },
   {
     title: "Maternity Photography",
@@ -84,7 +84,7 @@ const services = [
       "Personal & couple images included",
     ],
     perfectFor: ["Baby bump shoots", "Couple maternity portraits", "Maternity announcements"],
-    image: "/portfolio/maternity/maternity1.jpeg",
+    image: "/portfolio/maternity/maternity-photography-south-wales-4.jpeg",
   },
   {
     title: "Convocation & Graduation",
@@ -100,7 +100,7 @@ const services = [
       "Group class photos",
       "Solo graduation portraits",
     ],
-    image: "/portfolio/graduation/graduation1.jpeg",
+    image: "/portfolio/graduation/graduation-photography-south-wales-3.jpeg",
   },
   {
     title: "Events Coverage",
@@ -112,7 +112,7 @@ const services = [
       "Online gallery delivery",
     ],
     perfectFor: ["Birthdays", "Corporate events", "Parties", "Engagements"],
-    image: "/portfolio/events/IMG_7008.jpg",
+    image: "/portfolio/events/events-photography-south-wales-2.jpg",
   },
   {
     title: "Pre-Wedding Shoots",
@@ -124,7 +124,7 @@ const services = [
       "Optional photo book (£200)",
     ],
     perfectFor: ["Engaged couples", "Save-the-date photos", "Anniversary portraits"],
-    image: "/portfolio/pre-wedding/IMG_1604.jpg",
+    image: "/portfolio/pre-wedding/pre-wedding-photography-south-wales-2.jpg",
   },
   {
     title: "Fashion Collection Shoot",
@@ -136,7 +136,7 @@ const services = [
       "Social media crops included in campaign package",
     ],
     perfectFor: ["Clothing brands", "Fashion designers", "Product campaigns"],
-    image: "/portfolio/fashion/IMG_4545.jpg",
+    image: "/portfolio/fashion/fashion-photography-south-wales-4.jpg",
   },
   {
     title: "Lifestyle Photography",
@@ -148,7 +148,7 @@ const services = [
       "Up to 10 edited images",
     ],
     perfectFor: ["Content creators", "Personal brands", "Natural storytelling shoots"],
-    image: "/portfolio/portraits/IMG_8518.jpg",
+    image: "/portfolio/portraits/portraits-photography-south-wales-3.jpg",
   },
   {
     title: "Children Photography",
@@ -160,7 +160,7 @@ const services = [
       "10 edited images",
     ],
     perfectFor: ["Toddlers & young children", "Birthday portraits", "Milestone memories"],
-    image: "/portfolio/children/IMG_4702.jpg",
+    image: "/portfolio/children/children-photography-south-wales-3.jpg",
   },
 ];
 

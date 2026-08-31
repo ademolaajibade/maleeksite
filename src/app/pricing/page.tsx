@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     url: "/pricing",
     title: pageTitle,
     description: pageDescription,
-    images: [{ url: "/portfolio/portraits/p2.jpeg" }],
+    images: [{ url: "/portfolio/portraits/portraits-photography-south-wales-4.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: pageTitle,
     description: pageDescription,
-    images: ["/portfolio/portraits/p2.jpeg"],
+    images: ["/portfolio/portraits/portraits-photography-south-wales-4.jpeg"],
   },
 };
 

@@ -21,7 +21,7 @@ export const CITIES: Record<CityKey, CityContent> = {
     metaTitle: "Portrait Photographer in Cardiff, South Wales",
     metaDescription:
       "Looking for a portrait photographer in Cardiff? Maleek offers portrait, family, maternity, graduation, and pre-wedding photography sessions around Cardiff Bay, Bute Park, and the city centre.",
-    heroImage: "/portfolio/lifestyle/lifestyle2.jpeg",
+    heroImage: "/portfolio/lifestyle/lifestyle-photography-south-wales-2.jpeg",
     heroAlt: "Portrait photographer in Cardiff, South Wales",
     subtitle: "Portrait, family, and lifestyle photography around Cardiff, Wales' capital.",
     intro: [
@@ -35,9 +35,9 @@ export const CITIES: Record<CityKey, CityContent> = {
       { title: "Roath Park", desc: "A quieter, greener setting for relaxed family and children's sessions." },
     ],
     gallery: [
-      { src: "/portfolio/portraits/IMG_5477.jpg", alt: "Portrait photography session in Cardiff" },
-      { src: "/portfolio/family/IMG_7435.jpg", alt: "Family photography session in Cardiff" },
-      { src: "/portfolio/fashion/IMG_4530.jpg", alt: "Fashion photography shoot in Cardiff" },
+      { src: "/portfolio/portraits/portraits-photography-south-wales-1.jpg", alt: "Portrait photography session in Cardiff" },
+      { src: "/portfolio/family/family-photography-south-wales-1.jpg", alt: "Family photography session in Cardiff" },
+      { src: "/portfolio/fashion/fashion-photography-south-wales-1.jpg", alt: "Fashion photography shoot in Cardiff" },
     ],
     faqs: [
       {
@@ -60,7 +60,7 @@ export const CITIES: Record<CityKey, CityContent> = {
     metaTitle: "Portrait Photographer in Newport, South Wales",
     metaDescription:
       "Portrait, family, maternity, and graduation photography in Newport, South Wales, by Maleek — sessions around the Transporter Bridge, Newport Wetlands, and the River Usk.",
-    heroImage: "/portfolio/events/IMG_7020.jpg",
+    heroImage: "/portfolio/events/events-photography-south-wales-3.jpg",
     heroAlt: "Portrait photographer in Newport, South Wales",
     subtitle: "Portrait, family, and event photography across Newport and the Usk valley.",
     intro: [
@@ -74,9 +74,9 @@ export const CITIES: Record<CityKey, CityContent> = {
       { title: "River Usk & City Centre", desc: "Everyday Newport streets and riverside views for lifestyle and event coverage." },
     ],
     gallery: [
-      { src: "/portfolio/maternity/IMG_2363.jpg", alt: "Maternity photography session in Newport" },
-      { src: "/portfolio/graduation/IMG_2526.jpg", alt: "Graduation photography session in Newport" },
-      { src: "/portfolio/children/IMG_4688.jpg", alt: "Children's photography session in Newport" },
+      { src: "/portfolio/maternity/maternity-photography-south-wales-1.jpg", alt: "Maternity photography session in Newport" },
+      { src: "/portfolio/graduation/graduation-photography-south-wales-1.jpg", alt: "Graduation photography session in Newport" },
+      { src: "/portfolio/children/children-photography-south-wales-1.jpg", alt: "Children's photography session in Newport" },
     ],
     faqs: [
       {
@@ -99,7 +99,7 @@ export const CITIES: Record<CityKey, CityContent> = {
     metaTitle: "Portrait Photographer in Swansea, South Wales",
     metaDescription:
       "Portrait, family, pre-wedding, and lifestyle photography in Swansea, South Wales, by Maleek — sessions around Swansea Bay, Mumbles, and Singleton Park.",
-    heroImage: "/portfolio/pre-wedding/IMG_1629.jpg",
+    heroImage: "/portfolio/pre-wedding/pre-wedding-photography-south-wales-5.jpg",
     heroAlt: "Portrait photographer in Swansea, South Wales",
     subtitle: "Portrait, pre-wedding, and lifestyle photography along Swansea Bay.",
     intro: [
@@ -113,9 +113,9 @@ export const CITIES: Record<CityKey, CityContent> = {
       { title: "Gower Peninsula", desc: "For clients wanting a short trip out for dramatic coastal and countryside backdrops." },
     ],
     gallery: [
-      { src: "/portfolio/pre-wedding/IMG_1606.jpg", alt: "Pre-wedding photography session in Swansea" },
-      { src: "/portfolio/lifestyle/lifestyle1.jpeg", alt: "Lifestyle photography session in Swansea" },
-      { src: "/portfolio/birthday/IMG_2519.jpg", alt: "Birthday photography session in Swansea" },
+      { src: "/portfolio/pre-wedding/pre-wedding-photography-south-wales-3.jpg", alt: "Pre-wedding photography session in Swansea" },
+      { src: "/portfolio/lifestyle/lifestyle-photography-south-wales-1.jpeg", alt: "Lifestyle photography session in Swansea" },
+      { src: "/portfolio/birthday/birthday-photography-south-wales-1.jpg", alt: "Birthday photography session in Swansea" },
     ],
     faqs: [
       {
