@@ -51,18 +51,18 @@ export default function Hero() {
         }}
       >
         <p className="text-accent text-xs tracking-[0.4em] uppercase mb-8 font-sans font-medium">
-          Portrait Photographer in South Wales, UK
+          Cardiff · Newport · Swansea
         </p>
         <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-light text-foreground leading-none mb-6 tracking-tight">
-          Capturing
+          South Wales’
           <br />
-          <span className="italic text-accent">Timeless</span>
+          <span className="italic text-accent">Portrait</span>
           <br />
-          Moments
+          Photographer
         </h1>
         <p className="text-muted-foreground text-lg md:text-xl font-light max-w-xl mx-auto mb-12 leading-relaxed">
-          Every portrait tells a story. Let us tell yours — with light, emotion,
-          and artistry that lasts a lifetime.
+          Capturing timeless moments — every portrait tells a story, with
+          light, emotion, and artistry that lasts a lifetime.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
