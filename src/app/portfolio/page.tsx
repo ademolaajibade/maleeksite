@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
 import PortfolioGrid, { type PortfolioImage } from "@/components/PortfolioGrid";
+import { CATEGORY_FOLDERS, getAllPortfolioImages } from "@/lib/portfolio-images";
 
 const pageTitle = "Photography Portfolio | Portraits, Family & Weddings — South Wales";
 const pageDescription =
@@ -30,45 +29,11 @@ export const metadata: Metadata = {
   },
 };
 
-const CATEGORY_FOLDERS: { folder: string; label: string }[] = [
-  { folder: "portraits", label: "Portraits" },
-  { folder: "fashion", label: "Fashion" },
-  { folder: "pre-wedding", label: "Pre-Wedding" },
-  { folder: "events", label: "Events" },
-  { folder: "maternity", label: "Maternity" },
-  { folder: "birthday", label: "Birthday" },
-  { folder: "graduation", label: "Graduation" },
-  { folder: "children", label: "Children" },
-  { folder: "family", label: "Family" },
-  { folder: "lifestyle", label: "Lifestyle" },
-];
-
-const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
-
-function readCategoryImages(folder: string, label: string): PortfolioImage[] {
-  const dir = path.join(process.cwd(), "public", "portfolio", folder);
-  let files: string[] = [];
-  try {
-    files = fs
-      .readdirSync(dir)
-      .filter((f) => IMAGE_EXTENSIONS.has(path.extname(f).toLowerCase()))
-      .sort();
-  } catch {
-    return [];
-  }
-
-  return files.map((file, i) => ({
-    src: `/portfolio/${folder}/${file}`,
-    alt: `${label} photography by Maleek in South Wales, UK — sample ${i + 1}`,
-    category: label,
-    span: i % 5 === 0 ? "row-span-2" : undefined,
-  }));
-}
-
 export default function PortfolioPage() {
-  const images = CATEGORY_FOLDERS.flatMap(({ folder, label }) =>
-    readCategoryImages(folder, label)
-  );
+  const images: PortfolioImage[] = getAllPortfolioImages().map(({ indexInCategory, ...img }) => ({
+    ...img,
+    span: indexInCategory % 5 === 0 ? "row-span-2" : undefined,
+  }));
   const categories = ["All", ...CATEGORY_FOLDERS.map((c) => c.label)];
 
   return (
