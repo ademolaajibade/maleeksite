@@ -48,7 +48,6 @@ const services = [
       "Studio location",
       "Packages from £140",
       "Professionally edited images",
-      "Optional BTS reel video (15–20 sec)",
     ],
     perfectFor: [
       "Personal branding",
@@ -65,7 +64,6 @@ const services = [
       "Studio location",
       "Packages from £160",
       "Professionally edited images",
-      "BTS/Reel clips included in select packages",
     ],
     perfectFor: [
       "Families of all sizes",
