@@ -32,7 +32,6 @@ const servicePricing: ServicePricing[] = [
           "1 Outfit",
           "4 professionally edited images",
           "Studio location",
-          "Add-on: BTS/Reel video (15–20 sec)",
         ],
       },
       {
@@ -44,7 +43,6 @@ const servicePricing: ServicePricing[] = [
           "Up to 2 Outfits",
           "9 professionally edited images",
           "Studio location",
-          "Add-on: BTS/Reel video (15–20 sec)",
         ],
       },
       {
@@ -56,7 +54,6 @@ const servicePricing: ServicePricing[] = [
           "15–20 professionally edited images",
           "Creative Direction Included",
           "Studio location",
-          "Add-on: BTS/Reel video (15–20 sec)",
         ],
       },
     ],
@@ -82,7 +79,6 @@ const servicePricing: ServicePricing[] = [
           "5 professionally edited images",
           "Extra images at £20 each",
           "Studio location",
-          "Add-on: BTS/Reel video (15–20 sec)",
         ],
       },
       {
@@ -94,7 +90,6 @@ const servicePricing: ServicePricing[] = [
           "Two Outfits",
           "11 professionally edited images",
           "Studio location",
-          "BTS/Reels Clips Included",
         ],
       },
       {
